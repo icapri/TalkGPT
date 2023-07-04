@@ -11,7 +11,7 @@ recognizer = speech_recognition.Recognizer()
 # Generates a string answer for the specified question.
 def answer(question):
     response = openai.Completion.create(
-        engine="MODEL",
+        engine="gpt-3.5-turbo",
         messages=[
             {
                 'role': 'user',
